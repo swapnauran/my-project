@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscale & Enhance</title>
+    <meta name="description" content="Elevate your images with Chitraai.pro. Our advanced tools are designed to enhance and upscale your images, resulting in clearer and more vibrant visuals.">
+    <meta name="keywords" content="image upscaling, enhance images, image quality improvement, image enhancement, Chitraai.pro Image Upscale and Enhance, image upscale and enhance, free online image upscale and enhancement, ai image upscale and enhance, upscale and enhance image online, can you upscale an image, how do i upscale an image, does upscaling improve picture quality, can you make an image higher quality, what is image upscaling, upscale and enhance image ai, how to upscale an image, how to upscale an image without losing quality, how to upscale an image to 1080p, how to upscale an image in affinity photo, android image upscaler, upscale an image in photoshop, b. enhanced beauty, best image upscale software, upscale image android, how to upscale an image photoshop, c# upscale image, d image photography, davinci resolve upscale sd to hd, d-image, let's enhance free online image upscale and enhancement, enhance and enlarge image, enhance image ai, enlarge image and increase quality, enhance image lexington, upscale and enhance image free, gimp image upscale, fourier image analysis, google image upscale, gimp upscale image resolution, hd image upscaler, how to upscale an image resolution, upscale image and improve its quality, image i enhance, upscale and image, j image software, jpg upscaling, imagej increase resolution, k edge imaging, image enhancer and enlarger, machine learning upscale image, nvidia image upscale ai, image upscale photoshop, upscale image and improve quality online, upscale image with photoshop, quality image improver, upscale image quality, quality upscale, quality enhance, r image analysis, s image salon and spa, text image upscaler, what is upscaling an image, upscale image photoshop, v imagery and design, v imagery, vm image vs snapshot, enhance image with ai, upscale and enhance your image, z upscale events, z image hair salon, zoom in and enhance photo, upscale image resolution photoshop, 2x image upscaler, upscale and enhance photo, upscale and enhance image, 4x image upscale, upscale an image to 4k, 4k upscale vs 4k, 8k image upscaler, upscale 8k, upscale  image 8k">
+    <meta name="author" content="CITRA AI">
+    <meta name="robots" content="index, follow">
+    <!-- Font Awesome Stylesheet (Make sure to include this link) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      color: #333;
+      text-align: left;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      transition: background-color 0.3s, padding 0.3s;
+    }
+
+    header.active {
+      background-color: #fff;
+      padding: 10px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .get-started-button {
+      background-color: #3498db;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-signup {
+      background-color: white;
+      color: #3498db;
+      padding: 8px 16px;
+      font-size: 1.2em;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 8px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 260px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .ai-tools-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .ai-tools-heading {
+      font-size: 3em;
+    }
+
+    
+    .menu-icon {
+      font-size: 2em;
+      color: #3498db;
+      display: none;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 3;
+    }
+
+    .menu-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: white;
+      text-align: center;
+      z-index: 2;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .menu-items a {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .menu-items .login-signup {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.7em;
+      margin-right: 50;
+    }
+
+    .menu-icon.active {
+      right: 10px;
+    }
+    .main-content h2 {
+  font-size: 6em;
+  margin-bottom: 10px; /* Add margin bottom to create space between title and buttons */
+  margin-top: 10px; /* Adjust this value to move the title upward */
+}
+
+.main-content form {
+  margin-top: 80px; /* Adjust this value to move the buttons downward */
+}
+
+.main-content form button {
+  margin-top: 10px; /* Adjust this value to create space between buttons */
+}
+
+.main-content {
+      text-align: center;
+      
+      margin-top: 250px;
+    }
+
+    main {
+            text-align: center;
+        }
+    
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    .contact-us {
+      margin-top: 20px;
+    }
+
+    .footer-text {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    /* Social media styles */
+    .social-media {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5em;
+    }
+
+    .social-media i {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Add this style to set the font size for the "About Us" content */
+    .about-us-content {
+      font-size: 1em; /* Adjust the size as needed */
+    }
+
+    /* New styles for the About Us dropdown */
+    .about-us-dropdown {
+      display: none;
+      padding: 10px;
+    }
+
+    .about-us-dropdown.active {
+      display: block;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .image-container {
+        flex-direction: column;
+      }
+
+      .image-container div {
+        width: 100%;
+      }
+
+      .login-signup,
+      header nav {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        order: 2;
+      }
+
+      .menu-container.active {
+        display: block;
+      }
+
+      .menu-container.active .login-signup {
+        display: block;
+        margin-top: 10px;
+        font-size: .7em;
+        margin-right: 50;
+      }
+
+      .menu-container.active nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .menu-icon.active {
+        right: 10px;
+      }
+
+      .main-content h2 {
+  font-size: 4em;
+  
+      }
+
+      footer {
+        padding: 10px;
+      }
+
+      .footer-text {
+        font-size: 0.8em;
+      }
+
+      .about-us,
+      .our-tools,
+      .privacy-policy,
+      .copyright-text,
+      .contact-us {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      /* Additional styles for the About Us dropdown on small screens */
+      .about-us-content {
+        display: none;
+      }
+
+      .about-us-dropdown.active .about-us-content {
+        display: block;
+      }
+    }
+  </style>
+
+<style>
+        
+  /* Style for the container */
+  .container {
+      text-align: center;
+      margin-top: 10px; /* Adjust margin-top as needed */
+      position: relative; /* Ensure relative positioning */
+  }
+
+  /* Style for the upload form */
+  form {
+      margin-bottom: 20px;
+      background-color: #ffffff; /* Light gray background */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Black shadow */
+      width: 400px;
+      height: 400px; /* Set height to 400px */
+      position: relative; /* Ensure relative positioning */
+      margin: 0 auto; /* Centers the form horizontally */
+      z-index: 1; /* Ensure the upload form appears above the white box */
+  }
+
+  /* Style for the upload button */
+  .custom-file-upload {
+      display: inline-block;
+      border: none;
+      background-color: #0298FF;
+      color: white;
+      padding: 15px 34px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+      margin-top: 40px;
+  }
+
+  .custom-file-upload:hover {
+      background-color: #0574ce; /* Change background color on hover */
+  }
+
+  /* Style for upscale options */
+  .upscale-options {
+      margin-top: 80px;
+  }
+
+  .upscale-option {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .upscale-option input[type="radio"] {
+      display: none; /* Hide the radio buttons */
+  }
+
+  .upscale-label {
+     display: inline-block;
+     background-color: #0298FF;
+     color: white;
+     padding: 10px 20px;
+     cursor: pointer;
+     border-radius: 4px;
+     font-size: 16px;
+     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Updated shadow */
+  }
+
+  .upscale-label:hover {
+      background-color: #02ff74; /* Change background color on hover */
+  }
+
+  .upscale-option input[type="radio"]:checked + .upscale-label {
+      background-color: #02ff74; /* Change background color when checked */
+  }
+
+  /* Style for the upload and upscale button */
+  .upload-upscale-button {
+     display: inline-block;
+     border: none;
+     background-color: #0298FF;
+     color: white;
+     padding: 15px 34px;
+     cursor: pointer;
+     border-radius: 4px;
+     font-size: 18px;
+     text-transform: uppercase;
+     font-weight: bold;
+     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+     margin-top: 50px; /* Add margin top for spacing */
+  }
+
+  .upload-upscale-button:hover {
+     background-color: #0574ce; /* Change background color on hover */
+  }
+  /* Style for the download button */
+  .download-button {
+     display: inline-block;
+     border: none;
+     background-color: #0298FF;
+     color: white;
+     padding: 15px 34px;
+     cursor: pointer;
+     border-radius: 4px;
+     font-size: 18px;
+     text-transform: uppercase;
+     font-weight: bold;
+     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+     text-decoration: none; /* Remove default underline for links */
+     margin-top: 50px;
+  }
+
+  .download-button:hover {
+     background-color: #0574ce; /* Change background color on hover */
+  }
+
+  /* Style for the box */
+  .box {
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Black shadow */
+      padding: 20px;
+      border-radius: 10px;
+      width: fit-content; /* Adjusts box width based on content */
+      margin: 0 auto; /* Centers the box horizontally */
+      position: relative;
+      z-index: 0; /* Ensure the white box appears below the upload form */
+  }
+
+  /* Style for the image */
+  img {
+      max-width: 400px; /* Max width for landscape and square images */
+      max-height: 300px; /* Max height for portrait and square images */
+      width: auto; /* Ensures aspect ratio is maintained */
+      height: auto; /* Ensures aspect ratio is maintained */
+      border-radius: 10px; /* Apply border radius to match the box */
+  }
+
+  /* Style for the upscale image */
+  .image-upscale {
+      margin-top: 20px; /* Ensure margin at the top of the upscale image box */
+      position: relative; /* Relative positioning */
+  }
+
+  
+  
+  /* Style for the white box */
+  #whiteBox {
+      display: none; /* Initially hide the white box */
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Black shadow */
+      width: 300px;
+      height: 300px;
+      margin: -380px auto 20px; /* Adjust the margin to position the box above the upload form */
+      position: relative;
+      z-index: 2; /* Ensure the white box appears above the upload form */
+  }
+
+  #whiteBox::after {
+      content: "";
+      position: absolute;
+      width: 70px; /* Adjust the width of the wheel */
+      height: 70px; /* Adjust the height of the wheel */
+      border: 10px solid transparent;
+      border-top-color: rgb(65, 154, 255); /* Set the color of the wheel */
+      border-radius: 50%;
+      animation: spin 1s linear infinite; /* Define the spinning animation */
+      top: 35%; /* Move the wheel slightly upward */
+      left: 35%; /* Move the wheel slightly to the left */
+      transform: translate(-50%, -50%); /* Center the wheel both horizontally and vertically */
+  }
+
+  #message {
+      display: none; /* Initially hide the message */
+      position: absolute; /* Position the message */
+      bottom: -60px; /* Position the message slightly higher */
+      left: 50%; /* Center the message horizontally */
+      transform: translateX(-50%); /* Center the message horizontally */
+  }
+
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  /* Media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  
+  form {
+      width: 80%; /* Adjust form width for smaller screens */
+      height: auto; /* Allow form height to adjust based on content */
+  }
+
+  .custom-file-upload {
+      margin-top: 20px; /* Adjust margin-top for smaller screens */
+  }
+
+  .upscale-options {
+      margin-top: 50px; /* Adjust margin-top for smaller screens */
+  }
+
+  .upload-upscale-button {
+      margin-top: 30px; /* Adjust margin-top for smaller screens */
+  }
+
+  .download-button {
+      margin-top: 30px; /* Adjust margin-top for smaller screens */
+  }
+
+  .box {
+      width: 90%; /* Adjust box width for smaller screens */
+      margin: 0 auto 20px; /* Adjust margin for smaller screens */
+  }
+
+  #whiteBox {
+      width: 90%; /* Adjust white box width for smaller screens */
+      margin: -315px auto 20px; /* Adjust margin for smaller screens */
+  }
+
+  #message {
+      bottom: -60px; /* Adjust message position for smaller screens */
+  }
+
+  h2 {
+      font-size: 4em; /* Adjust font size for smaller screens */
+      margin-bottom: 60px; /* Adjust margin-bottom for smaller screens */
+  }
+}
+</style>
+
+<style>
+
+  /* Content Section */
+.content-section {
+    background-color: #c5c4c4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Adjusted */
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+.video {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Our Tool Section */
+.our-tool-section {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: auto; /* Adjusted */
+    margin-top: 50px;
+}
+
+.our-tool-section .image {
+    flex: 1;
+    order: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.our-tool-section .image img {
+    max-width: 100%;
+    max-height: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.our-tool-section .text {
+    flex: 1;
+    order: 1;
+}
+
+.our-tool-section .text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.our-tool-section .text p {
+    font-size: 18px;
+}
+
+/* Our Tools Section */
+.our-tools-section {
+    background-color: #c5c4c4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: auto; /* Adjusted */
+    margin-top: 50px;
+}
+
+.our-tools-section .image {
+    flex: 1;
+    order: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.our-tools-section .image img {
+    max-width: 100%;
+    max-height: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.our-tools-section .text {
+    flex: 1;
+    order: 2;
+}
+
+.our-tools-section .text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.our-tools-section .text p {
+    font-size: 18px;
+}
+
+.our-too-section {
+    background-color: #4c93ff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: auto; /* Adjusted */
+    margin-top: 50px;
+}
+
+
+
+
+
+.our-too-section .text {
+    flex: 2;
+    color: #ffffff;
+   
+}
+
+.our-too-section .text h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.our-too-section .text p {
+    font-size: 20px;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #000000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.faq-container {
+    max-width: 100%; /* Adjusted */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-column {
+    width: 48%;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+}
+
+.faq-item p {
+    font-size: 16px;
+}
+
+
+
+   @media only screen and (max-width: 768px) {
+
+      .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .video, .text {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .video iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .text {
+    flex: 1; /* Take up 100% of the available space */
+    margin-right: 0; /* Remove margin-right */
+  }
+
+  .text h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin-bottom */
+  }
+
+  .text p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .our-too-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin-top: 80px; /* Adjust margin for better layout */
+    max-height: unset; /* Remove max-height for better content visibility */
+  }
+
+  .our-too-section .image {
+    order: 1; /* Change order for smaller screens */
+    margin-bottom: 10px; /* Add margin-bottom for smaller screens */
+  }
+
+  .our-too-section .image img {
+    max-height: 200px; /* Adjust maximum height for smaller screens */
+    border-radius: 4px; /* Adjust border radius for smaller screens */
+  }
+
+  .our-too-section .text {
+    order: 2; /* Change order for smaller screens */
+    width: 100%;
+    margin: 10px 0;
+    
+  }
+
+  .our-too-section .text h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+  }
+
+  .our-too-section .text p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+    
+  .our-tool-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin-top: 80px; /* Adjust margin for better layout */
+    max-height: unset; /* Remove max-height for better content visibility */
+  }
+
+  .our-tool-section .image {
+    order: 1; /* Change order for smaller screens */
+    margin-bottom: 10px; /* Add margin-bottom for smaller screens */
+  }
+
+  .our-tool-section .image img {
+    max-height: 200px; /* Adjust maximum height for smaller screens */
+    border-radius: 4px; /* Adjust border radius for smaller screens */
+  }
+
+  .our-tool-section .text {
+    order: 2; /* Change order for smaller screens */
+    width: 100%;
+    margin: 10px 0;
+    
+  }
+
+  .our-tool-section .text h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+  }
+
+  .our-tool-section .text p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  
+    
+    .our-tools-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin-top: 80px; /* Adjust margin for better layout */
+    max-height: unset; /* Remove max-height for better content visibility */
+  }
+
+  .our-tools-section .image {
+    order: 1; /* Change order for smaller screens */
+    margin-bottom: 10px; /* Add margin-bottom for smaller screens */
+  }
+
+  .our-tools-section .image img {
+    max-height: 200px; /* Adjust maximum height for smaller screens */
+    border-radius: 4px; /* Adjust border radius for smaller screens */
+  }
+
+  .our-tools-section .text {
+    order: 2; /* Change order for smaller screens */
+    width: 100%;
+    margin: 10px 0;
+    
+  }
+
+  .our-tools-section .text h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+  }
+
+  .our-tools-section .text p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .faq-container {
+  max-width: 80%; /* Set maximum width to adapt to smaller screens */
+  padding: -10px; /* Reduce padding for smaller screens */
+  flex-wrap: wrap; /* Allow columns to wrap to the next line */
+}
+
+.faq-column {
+  width: 100%; /* Set width to full for smaller screens */
+  margin-bottom: -10px; /* Add margin between columns */
+}
+
+.faq-item {
+  margin-bottom: 10px; /* Reduce margin between FAQ items for smaller screens */
+}
+
+.faq-item h3 {
+  font-size: 14px; /* Decrease font size for questions */
+}
+
+.faq-item p {
+  font-size: 10px; /* Decrease font size for answers */
+}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="menu-container">
+    <div class="menu-items">
+      <div class="login-signup">Login/Sign Up</div>
+      <nav>
+        <a href="index.html">Home</a> <!-- Updated link to point to index.html -->
+        <div class="dropdown">
+          <a href="#services">Services</a>
+          <div class="dropdown-content">
+            <a href="Image Upscale & Enhance.html">AI Image Upscaling</a>
+            <a href="image_background_remove.html">AI Background Remove</a>
+            <a href="Image Unwanted Object Remove.html">Remove Unwanted Object</a>
+            <a href="Image Lip Sync.html">Image Lip-Sync</a>
+          </div>
+        </div>
+        <a href="#tools">Tools</a>
+        <a href="#price">Price</a>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <div>
+      <h1>Chitra AI</h1>
+      <p>Your Image Processing Solution</p>
+      <nav>
+        <a href="index.html">Home</a> <!-- Updated link to point to index.html -->
+        <div class="dropdown">
+          <a href="#services">Services</a>
+          <div class="dropdown-content">
+            <a href="Image Upscale & Enhance.html">AI Image Upscaling</a>
+            <a href="image_background_remove.html">AI Background Remove</a>
+            <a href="Image Unwanted Object Remove.html">Remove Unwanted Object</a>
+            <a href="Image Lip Sync.html">Image Lip-Sync</a>
+          </div>
+        </div>
+        <a href="#tools">Tools</a>
+        <a href="#price">Price</a>
+      </nav>
+    </div>
+    <div class="login-signup">
+      Login/Sign Up
+    </div>
+  </header>
+  <div class="main-content">
+  <main>
+    <div class="container">
+        <h2>Image Upscale & Enhance</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" id="fileInput" accept="image/*" style="display: none;">
+            <label for="fileInput" class="custom-file-upload">Choose File</label>
+            <br><br>
+            <div class="upscale-options">
+                <div class="upscale-option">
+                    <input type="radio" id="2x" name="scale_factor" value="2">
+                    <label for="2x" class="upscale-label">2x Upscale</label>
+                </div>
+                <div class="upscale-option">
+                    <input type="radio" id="4x" name="scale_factor" value="4">
+                    <label for="4x" class="upscale-label">4x Upscale</label>
+                </div>
+            </div>
+            <br><br>
+            <button type="submit" onclick="showWhiteBox()" class="upload-upscale-button">Upscale Now</button>
+        </form>
+        <p id="message">Your image is upscaled...</p>
+    </div>
+
+    <!-- White box -->
+    <div id="whiteBox"></div>
+
+    <div class="container">
+        <div class="image-upscale">
+            {% if upscaled_image %}
+                <!-- Box for the upscaled image -->
+                <div class="box" id="imageBox">
+                    <img src="/download/{{ upscaled_image }}" alt="Upscaled Image" id="displayedImage">
+                </div>
+                <!-- Download link for the upscaled image -->
+                <p><a href="/download/{{ upscaled_image }}" download class="download-button">Download Image</a></p>
+            {% endif %}
+         <!-- Blank section with white background -->
+  <section class="blank-section"></section> 
+
+  <section class="content-section">
+    <div class="video">
+        <!-- Replace the placeholder video link with your YouTube embed code -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sOkhgBFent0?si=kJGeheuEF_azcnXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+    <div class="text">
+      <h3>Revolutionize Your Images with Chitra AI: Your Ultimate Image Processing Solution</h3>
+      <p>"Welcome to Chitra AI, your ultimate destination for image enhancement, upscale,</p> 
+      <p>and background removal. With cutting-edge AI technology, transform your visual into</p> 
+      <p>stunning masterpieces effortlessly. Bid farewell to ordinary images as Chitra AI</p> 
+      <p>brings them to life with unparalleled clarity and brilliance. Best of all, it's</p> 
+      <p>completely free with no signup required. Say hello to a new era of image editing</p> 
+      <p>and unleash your creativity with Chitra AI. Try it now and witness the magic firsthand!"</p>
+    </div>
+  </section>
+  
+  <section class="our-tool-section">
+    <div class="image">
+      <img src="https://i.postimg.cc/6pC37LZ0/boro-00000.png" alt="Image">
+    </div>
+    <div class="text">
+      <h3>Image Upscal</h3>
+        <p>Elevate Your Photos: Upscale and Enhance with AI Ready to give your images</p>
+        <p>a new lease on life? Our AI-powered image upscale service is here to transform</p> 
+        <p>your low-quality photos into high-resolution masterpieces. With just a few simple</p>
+        <p>steps, you can enhance the quality and clarity of your images, whether they're old</p> 
+        <p>favorites or recent captures. Say goodbye to pixelation and hello to stunning detail.</p> 
+        <p>Try it out today and see the difference!</p>
+    </section>
+  
+  
+  <section class="our-tools-section">
+  <div class="image">
+  <img src="https://i.postimg.cc/Kv3yMjMM/before-after.jpg" alt="Image">
+  </div>
+  <div class="text">
+    <h3>Unblur Your Image</h3>
+    <p>Rediscover Clarity: Unblur Your Images in Seconds! Blurry photos? No problem! </P>
+    <p>Our 'Unblur Image' tool swiftly restores sharpness with ease. Say farewell to</p> 
+    <p>fuzziness and hello to crystal-clear clarity in just moments!</p>
+  </div>
+  </section>
+  
+  <section class="our-tool-section">
+    <div class="image">
+      <img src="https://i.postimg.cc/GtQkFw6c/boroo-00018.jpg" alt="Image">
+    </div>
+    <div class="text">
+      <h3>Sharpen Image</h3>
+      <p>Refine Your Images: Enhance with Precision Seeking extra crispness for your images?</p>
+      <p>Our 'Sharpen Image' feature is the answer! With precision and ease, unveil the finest</p> 
+      <p>details, making your photos burst with clarity. Bid farewell to dullness and embrace</p> 
+      <p>striking sharpness in every picture. Experience the difference now!</p>
+    
+    </div>
+    </section>
+
+  <section class="our-tools-section">
+    <div class="image">
+    <img src="https://i.postimg.cc/FsHm1Tgm/boro22-00008.jpg" alt="Image">
+    </div>
+    <div class="text">
+      <h3>Increase Image Resolution</h3>
+      <p>Seeking sharper, more detailed visuals? Our 'Increase Image Resolution' tool</p> 
+      <p>is your solution! With minimal effort, enhance your photos' resolution,</p> 
+      <p>revealing finer details and improving overall clarity. Bid farewell to pixelation</p> 
+      <p>and welcome crystal-clear images. Elevate your visuals today!</P>
+      
+    </div>
+    </section>
+
+    <section class="our-too-section">
+      
+      <div class="text">
+        <h3>How To Use Image Upscale Tool</h3>
+        <p>1. Choose Your Image File</p>
+        <p>2. Now Choose 2x Upscale Or 4x Upscale Botoom As Your Need</p> 
+        <p>3. After That Click Upscale Bottom</p> 
+        <p>4. Now Wait Sometime</p>
+        <p>5. After Upscaling Is Complete Download Your Upscale Image</p>
+        <p>N.B- IF YOU TRY TO NATURE IMAGE UPSCALE THEN TRY 2X UPSCALE</p>
+        <p>N.B- IF YOU TRY TO HUMAN IMAGE UPSCALE THEN 4X UPSCALE IS BEST</p>
+
+      </div>
+      </section>
+
+  
+  
+  <section class="faq-section">
+  <div class="faq-container">
+  <div class="faq-column">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+          <h3>1. What is Chitra.Pro?</h3>
+          <p>Chitra.Pro is an image processing solution that offers various AI-powered tools, including image background removal, image upscaling, object removal, and image lip-sync.</p>
+      </div>
+      <div class="faq-item">
+          <h3>2. How does the image background removal tool work?</h3>
+          <p>The image background removal tool uses advanced AI algorithms to automatically detect and remove the background from images, providing users with clean, transparent backgrounds.</p>
+      </div>
+      <div class="faq-item">
+          <h3>3. Is Chitra.Pro free to use?</h3>
+          <p>Yes, Chitra.Pro offers free access to basic features, but there may be premium features or usage limits that require a subscription or payment.</p>
+      </div>
+  </div>
+  <div class="faq-column">
+      <div class="faq-item">
+          <h3>7. What are the benefits of using Chitra.Pro?</h3>
+          <p>Chitra.Pro helps users enhance their images, improve productivity, and achieve professional-looking results with ease. It offers a range of powerful AI-driven tools for various image processing tasks.</p>
+      </div>
+      <div class="faq-item">
+          <h3>8. Can I use Chitra.Pro on mobile devices?</h3>
+          <p>Yes, Chitra.Pro is designed to be mobile-friendly and can be accessed and used on a variety of devices, including smartphones and tablets.</p>
+      </div>
+      <div class="faq-item">
+          <h3>9. Are there any limitations on the file size or format?</h3>
+          <p>Chitra.Pro supports a wide range of image file formats and sizes, but there may be limitations on file size for processing efficiency. Please refer to the platform's guidelines for specific details.</p>
+      </div>
+  </div>
+  <div class="faq-column">
+      <div class="faq-item">
+          <h3>4. Can I download the edited images?</h3>
+          <p>Yes, after processing your images, you can download them with the background removed or edited according to your preferences.</p>
+      </div>
+      <div class="faq-item">
+          <h3>5. How accurate is the background removal tool?</h3>
+          <p>The accuracy of the background removal tool depends on various factors such as image quality, complexity of the background, and settings chosen. In general, it provides high accuracy for most images.</p>
+      </div>
+      <div class="faq-item">
+          <h3>6. Is my data secure on Chitra.Pro?</h3>
+          <p>Chitra.Pro takes data security seriously and employs industry-standard encryption and security measures to protect user data.</p>
+      </div>
+  </div>
+  <div class="faq-column">
+      <div class="faq-item">
+          <h3>10. How can I contact Chitra.Pro support?</h3>
+          <p>You can reach out to Chitra.Pro support through email at support@chitra.pro or by using the contact form available on the website.</p>
+      </div>
+      <div class="faq-item">
+          <h3>11. Can I integrate Chitra.Pro with other applications?</h3>
+          <p>Chitra.Pro offers integration options with popular platforms and applications through APIs and plugins, allowing for seamless workflow integration.</p>
+      </div>
+      <div class="faq-item">
+          <h3>12. Is there a trial period for premium features?</h3>
+          <p>Yes, Chitra.Pro may offer a trial period for premium features, allowing users to explore and test advanced functionalities before making a purchase decision.</p>
+      </div>
+  </div>
+  </div>
+  </section>
+  
+  </main>
+    </div>
+  </div>
+</div>
+
+  <div class="ai-tools-section">
+    <!-- ... (unchanged) ... -->
+  </div>
+
+  <footer>
+    <div class="footer-text">
+      <div class="footer-column">
+        <div class="about-us">
+          <p class="about-us-title" onclick="toggleAboutUsDropdown()">About Us</p>
+          <div class="about-us-dropdown">
+            <p class="about-us-content">Founded in 2024, with a group of technomaniacs, Chitra.AI leverages the power of artificial intelligence and computer vision to deliver a wide range of products that make your life much easier and your work more productive. About Chitra.AI's commitment to innovation and excellence: Chitra.AI is dedicated to pushing the boundaries of what's possible with AI-driven image processing. Our team of experts is passionate about delivering state-of-the-art solutions to meet your unique needs.</p>
+          </div>
+        </div>
+        <div class="contact-us">
+          <p>Contact Us</p>
+          <p>US Office - North Carolina</p>
+          <p>India Office - Kolkata, India</p>
+          <p>Email: contact@chitra.com</p>
+          <p>WhatsApp: +919635507711</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="our-tools">
+          <p>Our Tools</p>
+          <p>AI Image Upscaling</p>
+          <p>AI Background Remove</p>
+          <p>Remove Unwanted Object</p>
+          <p>Image Lip-Sync</p>
+        </div>
+        <div class="privacy-policy">
+          <p><a href="Privacy_Policy.html">Privacy Policy</a></p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="social-media">
+          <p>Follow us on social media</p>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menuContainer = document.querySelector('.menu-container');
+      menuContainer.classList.toggle('active');
+      var menuIcon = document.querySelector('.menu-icon');
+      menuIcon.classList.toggle('active');
+    }
+
+    function fixHeader() {
+      var header = document.querySelector('header');
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition > 0) {
+        header.classList.add('active');
+      } else {
+        header.classList.remove('active');
+      }
+    }
+
+    function toggleAboutUsDropdown() {
+      var aboutUsDropdown = document.querySelector('.about-us-dropdown');
+      aboutUsDropdown.classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', fixHeader);
+
+    window.addEventListener('load', fixHeader);
+  </script>
+
+<script>
+  // Function to adjust the shape of the box based on the aspect ratio of the image
+  function adjustBoxShape() {
+      var image = document.getElementById('displayedImage');
+      var box = document.getElementById('imageBox');
+
+      if (image.naturalWidth > image.naturalHeight) {
+          // Landscape image
+          box.style.width = '300px';
+          box.style.height = '200px';
+          image.style.width = '300px';
+          image.style.height = '200px';
+      } else if (image.naturalWidth < image.naturalHeight) {
+          // Portrait image
+          box.style.width = '300px';
+          box.style.height = '400px';
+          image.style.width = '300px';
+          image.style.height = '400px';
+      } else {
+          // Square image
+          box.style.width = '250px';
+          box.style.height = '250px';
+          image.style.width = '250px';
+          image.style.height = '250px';
+      }
+  }
+
+  // Call adjustBoxShape when the window is loaded and when the displayed image is loaded
+  window.onload = adjustBoxShape;
+  document.getElementById('displayedImage').onload = adjustBoxShape;
+
+  // Function to show the white box and message
+  function showWhiteBox() {
+      var whiteBox = document.getElementById('whiteBox');
+      var message = document.getElementById('message');
+      whiteBox.style.display = 'block';
+      message.style.display = 'block';
+  }
+</script>
+</body>
+
+</html>
