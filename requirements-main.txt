@@ -1,0 +1,6 @@
+flask
+torch
+Pillow
+opencv-python 
+gunicorn
+RealESRGAN

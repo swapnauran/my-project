@@ -1,0 +1,26 @@
+runtime: python39  
+
+env: flex  
+
+services:
+ 
+  main:
+    entrypoint: gunicorn -b :$PORT main:app
+
+  
+  main1:
+    entrypoint: gunicorn -b :$PORT main1:app
+
+handlers:
+ 
+  - url: /
+    static_files: index.html
+    upload: index.html  
+
+  
+  - url: /image_enhance
+    script: main.py
+
+  
+  - url: /background_remove
+    script: main1.py
